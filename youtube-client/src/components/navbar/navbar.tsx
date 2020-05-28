@@ -1,13 +1,15 @@
 import React from "react";
 
-interface NavbarProps {}
+interface NavbarProps {
+  toggleSideNav: () => void;
+}
 
 export const Navbar: React.FC<NavbarProps> = (props: NavbarProps) => {
   return (
     <div id="youtube-navbar">
-      <div id="youtube-side-nav-toggle">
+      <button id="youtube-side-nav-toggle" onClick={props.toggleSideNav}>
         <i className="fas fa-bars" />
-      </div>
+      </button>
       <div id="youtube-logo">
         <div id="youtube-logo-icon">
           <i className="fab fa-youtube" />

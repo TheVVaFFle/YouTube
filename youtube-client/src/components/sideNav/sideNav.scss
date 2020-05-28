@@ -1,0 +1,112 @@
+#youtube-side-nav{
+  background-color: gray(32);
+  height: calc(100vh - 60px);
+  left: 0px;
+  position: fixed;
+  top: 60px;
+  width: 72px;
+
+  &.toggled{
+    width: 240px;
+  }
+
+  #youtube-side-nav-buttons{
+    .side-nav-button{
+      background-color: transparent;
+      border: none;
+      height: 72px;
+      outline: none;
+      text-align: center;
+      width: 72px;
+
+      &:hover,
+      &:focus{
+        background-color: rgba(white, 0.1);
+      }
+
+      i, h1{
+        color: gray(150);
+      }
+
+      i{
+        font-size: 1.25em;
+      }
+
+      h1{
+        font-size: 0.75em;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  #youtube-side-nav-expanded-content{
+    height: 100%;
+    overflow: auto;
+
+    #subscriptions-side-nav-group{
+      .side-nav-button{
+        i{
+          background-color: gray(90);
+          border-radius: 20px;
+          color: gray(210);
+          font-size: 1em;
+          height: 26px;
+          line-height: 26px;
+          margin: 2px;
+          width: 26px;
+        }
+      }
+    }
+
+    .side-nav-group{
+      padding: 10px 0px;
+
+      &:nth-of-type(n + 2){
+        border-top: 1px solid gray(60);
+      }
+
+      .side-nav-group-title{
+        padding: 5px 20px;
+        h1{
+          color: gray(230);
+          font-size: 0.9em;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .side-nav-button{
+      background-color: transparent;
+      border: none;
+      padding: 5px 20px;
+      text-align: left;
+      width: 100%;
+
+      &:hover,
+      &:focus{
+        background-color: rgba(white, 0.1);
+      }
+
+      i, h1{        
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        vertical-align: top;
+      }
+
+      i{
+        color: gray(150);
+        font-size: 1.5em;
+        text-align: center;
+        width: 30px;
+      }
+
+      h1{
+        color: gray(210);
+        font-size: 1.1em;
+        margin-left: 20px;
+      }
+    }
+  }
+}
