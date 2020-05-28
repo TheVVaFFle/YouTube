@@ -1,0 +1,127 @@
+#youtube-navbar{
+  background-color: gray(32);
+  height: 60px;
+  position: fixed;
+  width: 100%;
+
+  #youtube-side-nav-toggle,
+  #youtube-logo{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #youtube-side-nav-toggle{
+    i{
+      color: white;
+      font-size: 1.25em;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      width: 60px;
+    }
+  }
+
+  #youtube-logo{
+    #youtube-logo-icon,      
+    #youtube-logo-text{        
+      display: inline-block;
+      vertical-align: top;
+
+      i, h1{
+        height: 60px;
+        line-height: 60px;
+      }
+    }
+
+    #youtube-logo-icon{
+      i{
+        color: $red;
+        font-size: 1.5em;
+      }
+    }
+
+    #youtube-logo-text{
+      margin-left: 5px;
+
+      h1{
+        color: white;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1.25em;
+        margin: 0px;
+      }
+    }
+  }
+
+  #youtube-search-bar{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    #youtube-search-bar-input,
+    #youtube-search-bar-button{
+      vertical-align: top;
+    }
+
+    #youtube-search-bar-input{
+      background-color: gray(18);
+      border: 1px solid gray(40);
+      border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+      color: gray(230);
+      font-size: 1em;
+      height: 16px;
+      line-height: 16px;
+      max-width: 560px;
+      outline: none;
+      padding: 5px 10px;
+      width: 40vw;
+
+      &:focus{
+        border-color: $blue;
+      }
+    }
+
+    #youtube-search-bar-button{
+      background-color: gray(49);
+      border: none;
+      border-bottom-right-radius: 2px;
+      border-top-right-radius: 2px;
+      height: 28px;
+      width: 60px;
+
+      i{
+        color: gray(90);
+      }
+    }
+  }
+
+  #youtube-navbar-functions{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    .navbar-function{ 
+      display: inline-block;
+      height: 40px;
+      margin: 10px 5px;
+      vertical-align: top;
+      width: 40px;
+
+      i{
+        color: white;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 40px;
+      }
+
+      img{
+        border-radius: 20px;
+        height: 30px;
+        margin: 5px;
+        width: 30px;
+      }
+    }
+  }
+}

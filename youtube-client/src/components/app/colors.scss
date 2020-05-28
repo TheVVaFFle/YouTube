@@ -1,0 +1,17 @@
+@function gray($color) {
+  @return rgb($color, $color, $color);
+}
+
+$blue: rgb(52, 181, 244);
+$green: rgb(76, 175, 80);
+$lightGreen: rgb(156, 204, 101);
+$yellow: rgb(255, 160, 0);
+$purple: rgb(103, 58, 183);
+$red: rgb(239, 83, 80);
+$offWhite: rgb(246, 246, 248);
+
+$shadow1: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+$shadow2: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+$shadow3: rgba(0, 0, 0, 0.12) 0px 10px 30px, rgba(0, 0, 0, 0.16) 0px 6px 10px;
+
+$themeColor: $red;
