@@ -96,7 +96,7 @@ export const SideNav: React.FC<SideNavProps> = (props: SideNavProps) => {
           <SideNavGroup>
             <SideNavButton icon="fas fa-cog" label="Settings" />
             <SideNavButton icon="fas fa-flag" label="Report history" />
-            <SideNavButton icon="fas fa-flag" label="Help" />
+            <SideNavButton icon="fas fa-question-circle" label="Help" />
             <SideNavButton icon="fas fa-comment" label="Send feedback" />
           </SideNavGroup>
         </div>
