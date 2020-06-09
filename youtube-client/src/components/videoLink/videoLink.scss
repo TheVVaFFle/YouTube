@@ -1,0 +1,57 @@
+.video-link{
+  display: inline-block;
+  margin: 100px;
+  margin-bottom: 10px;  
+
+  .video-thumbnail{
+    background-color: rgba(white, 0.25);
+    height: 200px;    
+    width: 360px;
+  }
+
+  .video-info{
+    margin-top: 10px;
+
+    .video-channel-img,
+    .video-details{
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .video-channel-img{
+      border-radius: 20px;
+      height: 40px;
+      width: 40px;
+    }
+
+    .video-details{
+      margin-left: 10px;
+
+      .video-title{
+        margin-top: 5px; 
+
+        h1{
+          color: gray(230);
+          font-size: 1em;
+          font-weight: 700;
+        }
+      }
+
+      .video-channel-name{
+        margin-top: 5px;
+
+        h1{
+          color: gray(150);
+          font-size: 0.95em;
+        }
+      }
+
+      .video-stats{
+        h1, span{
+          color: gray(150);
+          font-size: 0.95em;
+        }
+      }
+    }
+  }
+}
